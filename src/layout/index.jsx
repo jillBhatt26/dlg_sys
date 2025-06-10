@@ -4,13 +4,13 @@ import Footer from '../partials/Footer';
 
 const AppLayout = () => {
     return (
-        <>
+        <div className="h-screen w-screen">
             <Nav />
 
             <Outlet />
 
             <Footer />
-        </>
+        </div>
     );
 };
 

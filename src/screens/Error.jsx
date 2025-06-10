@@ -5,8 +5,8 @@ const ErrorScreen = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="container m-auto h-96 flex flex-row justify-center items-center">
-            <div className="flex flex-col space-y-10">
+        <div className="container h-96 m-auto flex flex-row justify-center items-center">
+            <div className="flex flex-col my-auto space-y-10 ">
                 <p className="text-xl">
                     An error occurred. Please try again later.
                 </p>

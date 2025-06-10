@@ -9,7 +9,7 @@ const PrivateRoute = () => {
     // effects
     useEffect(() => {
         const isAuthenticated =
-            localStorage.getItem('isAuthenticated') ?? false;
+            JSON.parse(localStorage.getItem('isAuthenticated')) ?? false;
 
         setIsAuthenticated(isAuthenticated);
         setIsLoading(false);
