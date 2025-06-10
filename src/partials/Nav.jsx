@@ -24,18 +24,20 @@ const Nav = () => {
     };
 
     return (
-        <div className="container mx-auto navbar bg-base-100 shadow-sm flex justify-between">
-            <a className="btn btn-ghost text-xl">DLG Sys</a>
+        <div className="navbar bg-base-300 shadow-sm">
+            <div className="container mx-auto flex justify-between">
+                <a className="btn btn-ghost text-xl">DLG Sys</a>
 
-            {isAuthenticated && (
-                <button
-                    type="button"
-                    className="btn text-white text-lg w-fit"
-                    onClick={handleLogout}
-                >
-                    Logout
-                </button>
-            )}
+                {isAuthenticated && (
+                    <button
+                        type="button"
+                        className="btn text-lg w-fit"
+                        onClick={handleLogout}
+                    >
+                        Logout
+                    </button>
+                )}
+            </div>
         </div>
     );
 };
