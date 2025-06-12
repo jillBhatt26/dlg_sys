@@ -1,6 +1,6 @@
 # Delivery Label Generator System
 
-https://dlg-sys.onrender.com/login
+https://dlg-sys.onrender.com
 
 ## Tech Stack
 
