@@ -30,7 +30,7 @@ const LoginScreen = () => {
     };
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto mt-20">
             <form
                 className="text-center mx-auto flex flex-col justify-center space-y-5"
                 onSubmit={handleLoginFormSubmit}

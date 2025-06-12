@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 
 const Nav = () => {
     // states
@@ -26,7 +26,9 @@ const Nav = () => {
     return (
         <div className="navbar bg-base-300 shadow-sm">
             <div className="container mx-auto flex justify-between">
-                <a className="btn btn-ghost text-xl">DLG Sys</a>
+                <Link to="/" className="btn btn-ghost text-xl">
+                    DLG Sys
+                </Link>
 
                 {isAuthenticated && (
                     <button

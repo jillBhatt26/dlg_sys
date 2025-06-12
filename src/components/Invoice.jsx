@@ -17,8 +17,8 @@ const Invoice = () => {
         );
 
     return (
-        <div className="w-full h-full space-y-5 bg-base-300">
-            <PDFViewer width="100%" height="100%" showToolbar={false}>
+        <div className="w-full min-h-fit h-full space-y-5 bg-base-300 overflow-auto">
+            <PDFViewer width="100%" height="90%" showToolbar={false}>
                 <InvoiceDoc />
             </PDFViewer>
 
@@ -27,12 +27,14 @@ const Invoice = () => {
                 filename={`invoice_${label.deliveryID}.pdf`}
                 download={`invoice_${label.deliveryID}.pdf`}
             >
-                <button
-                    type="button"
-                    className="btn btn-success text-lg px-10 py-3"
-                >
-                    Download
-                </button>
+                <div className="max-w-sm mx-auto">
+                    <button
+                        type="button"
+                        className="w-full btn btn-success text-lg px-10 py-3"
+                    >
+                        Download
+                    </button>
+                </div>
             </PDFDownloadLink>
         </div>
     );

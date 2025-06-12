@@ -31,8 +31,6 @@ const InvoiceDoc = () => {
     useEffect(() => {
         if (!label) return;
 
-        console.log('label: ', label);
-
         const canvas = document.createElement('canvas');
 
         JsBarcode(canvas, label.deliveryID);
@@ -48,11 +46,23 @@ const InvoiceDoc = () => {
                 </View>
                 <View style={styles.section}>
                     <Text>{label.senderName}</Text>
-                    <Text>{label.senderAddress}</Text>
+                    <Text>{label.senderAddressLine1}</Text>
+                    {label.senderAddressLine2 && (
+                        <Text>{label.senderAddressLine2}</Text>
+                    )}
+                    {label.senderAddressLine3 && (
+                        <Text>{label.senderAddressLine3}</Text>
+                    )}
                 </View>
                 <View style={styles.section}>
                     <Text>{label.receiverName}</Text>
-                    <Text>{label.receiverAddress}</Text>
+                    <Text>{label.receiverAddressLine1}</Text>
+                    {label.receiverAddressLine2 && (
+                        <Text>{label.receiverAddressLine2}</Text>
+                    )}
+                    {label.receiverAddressLine3 && (
+                        <Text>{label.receiverAddressLine3}</Text>
+                    )}
                 </View>
             </Page>
         </Document>

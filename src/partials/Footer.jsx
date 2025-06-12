@@ -1,10 +1,10 @@
 const Footer = () => {
     return (
-        <footer className="footer lg:fixed lg:bottom-0 sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+        <footer className="container mx-auto mt-20 footer sm:footer-horizontal footer-center border-t border-base-300 text-base-content p-4">
             <aside>
                 <p>
-                    Copyright © {new Date().getFullYear()} - Project developed
-                    by{' '}
+                    Copyright © {new Date().getFullYear()}, Delivery Label
+                    Generator System - Project developed by{' '}
                     <a
                         href="https://www.linkedin.com/in/jill-bhatt"
                         target="_blank"
