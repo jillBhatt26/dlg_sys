@@ -1,12 +1,50 @@
-# React + Vite
+# Delivery Label Generator System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://dlg-sys.onrender.com/login
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Client:** Vite + React.js, Zustand, React-Router-Dom, Tailwind css, DaisyUI, @react-pdf/renderer, jsbarcode
 
-## Expanding the ESLint configuration
+## Client
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   Vite React.js app
+-   React-Router-Dom
+-   Tailwind CSS + DaisyUI
+-   Zustand state manager
+-   Login Screen
+-   Dashboard for Label Generation
+-   Barcode Generator
+-   PDF Viewer and Downloader with Barcode
+
+## Usage
+
+Clone the repo
+
+```bash
+  git clone https://github.com/jillBhatt26/dlg_sys.git
+```
+
+cd to the repo
+
+```bash
+  cd dlg_sys
+```
+
+Install dependencies
+
+```bash
+  yarn install --frozen-lockfile
+```
+
+Start development servers
+
+```bash
+  yarn dev
+```
+
+Build
+
+```bash
+  yarn build
+```
