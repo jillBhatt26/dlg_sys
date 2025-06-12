@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import {
     Page,
     Text,
@@ -8,7 +9,6 @@ import {
 } from '@react-pdf/renderer';
 import JsBarcode from 'jsbarcode';
 import useLabelStore from '../stores/label';
-import { useEffect, useState } from 'react';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     }
 });
 
-const InvoiceDoc = () => {
+const LabelDoc = () => {
     const label = useLabelStore(state => state.label);
 
     // states
@@ -69,4 +69,4 @@ const InvoiceDoc = () => {
     );
 };
 
-export default InvoiceDoc;
+export default LabelDoc;

@@ -1,8 +1,8 @@
 import useLabelStore from '../stores/label';
 import { PDFViewer, PDFDownloadLink } from '@react-pdf/renderer';
-import InvoiceDoc from './InvoiceDoc';
+import LabelDoc from './LabelDoc';
 
-const Invoice = () => {
+const Label = () => {
     const label = useLabelStore(state => state.label);
 
     if (!label)
@@ -19,11 +19,11 @@ const Invoice = () => {
     return (
         <div className="w-full min-h-fit h-full space-y-5 bg-base-300 overflow-auto">
             <PDFViewer width="100%" height="90%" showToolbar={false}>
-                <InvoiceDoc />
+                <LabelDoc />
             </PDFViewer>
 
             <PDFDownloadLink
-                document={<InvoiceDoc />}
+                document={<LabelDoc />}
                 filename={`invoice_${label.deliveryID}.pdf`}
                 download={`invoice_${label.deliveryID}.pdf`}
             >
@@ -40,4 +40,4 @@ const Invoice = () => {
     );
 };
 
-export default Invoice;
+export default Label;
